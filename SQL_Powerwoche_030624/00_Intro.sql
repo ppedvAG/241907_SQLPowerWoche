@@ -30,20 +30,14 @@
 	- Case
 
 	Tag 4:
-	- Dateigruppen
-	- MAXDOP
-	- Datums Dateigruppen
+	- DB Design
+	- Dateigruppe
+	- Kompression
 
 	Tag 5:
 	- Indizes
-	- SQL Profiler
-
-
+	- MAXDOP
+	- QueryStore
+	- SQL Server Profiler
 
 */
-
-USE Northwind
-
-SELECT City as Stadt FROM Customers
-WHERE City = 'Berlin'
-ORDER BY Stadt DESC
