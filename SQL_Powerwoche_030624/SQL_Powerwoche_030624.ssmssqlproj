@@ -73,6 +73,48 @@
           <AssociatedConnUserName />
           <FullPath>08_Views.sql</FullPath>
         </FileNode>
+        <FileNode Name="09_InsertUpdateDelete.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN11-PL2\SQLKURS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WIN11-PL2\SQLKURS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>09_InsertUpdateDelete.sql</FullPath>
+        </FileNode>
+        <FileNode Name="10_TempTable.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN11-PL2\SQLKURS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WIN11-PL2\SQLKURS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>10_TempTable.sql</FullPath>
+        </FileNode>
+        <FileNode Name="11_Unterabfragen.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN11-PL2\SQLKURS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WIN11-PL2\SQLKURS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>11_Unterabfragen.sql</FullPath>
+        </FileNode>
+        <FileNode Name="12_StoredProcedures.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN11-PL2\SQLKURS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WIN11-PL2\SQLKURS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>12_StoredProcedures.sql</FullPath>
+        </FileNode>
+        <FileNode Name="13_CASE.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN11-PL2\SQLKURS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WIN11-PL2\SQLKURS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>13_CASE.sql</FullPath>
+        </FileNode>
+        <FileNode Name="14_WHILE.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN11-PL2\SQLKURS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WIN11-PL2\SQLKURS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>14_WHILE.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Wiederholung.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN11-PL2\SQLKURS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WIN11-PL2\SQLKURS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Wiederholung.sql</FullPath>
+        </FileNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Sonstiges" Type="3" Sorted="true">
