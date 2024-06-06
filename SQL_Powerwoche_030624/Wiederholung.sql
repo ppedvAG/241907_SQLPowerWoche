@@ -109,3 +109,57 @@ usw...
 SELECT OrderID, DATEDIFF(DAY, RequiredDate, ISNULL(ShippedDate, GETDATE())) as TageZuSpät FROM Orders
 WHERE DATEDIFF(DAY, RequiredDate, ISNULL(ShippedDate, GETDATE())) > 0
 ORDER BY TageZuSpät DESC
+
+
+
+-- Übung WHILE
+
+/*
+	Schreibe ein SQL-Skript, das die Anzahl der Bestellungen für jedes Jahr von 1996 bis 1998 
+	aus der Northwind-Datenbank zählt. Verwende eine WHILE-Schleife, um die 
+	Ergebnisse für jedes Jahr zu berechnen und auszugeben.
+*/
+
+-- 1. Deklariere Variablen für das Startjahr, Endjahr und das aktuelle Jahr
+DECLARE @StartYear INT = 1996
+DECLARE @EndYear INT = 1998
+DECLARE @CurrentYear INT = @StartYear
+
+-- 2. WHILE-Schleife, um durch die Jahre zu iterieren
+WHILE @CurrentYear <= @EndYear
+BEGIN
+	-- Zähle die Anzahl der Bestellungen für das aktuelle Jahr
+	DECLARE @OrderCount INT
+	SELECT @OrderCount = COUNT(*)
+	FROM Orders
+	WHERE YEAR(OrderDate) = @CurrentYear
+
+    -- Gib das aktuelle Jahr und die Anzahl der Bestellungen aus
+	SELECT 'Year: ' + CAST(@CurrentYear AS nvarchar) + ',  Order Count: ' + CAST(@OrderCount as nvarchar)
+
+    -- Erhöhe das aktuelle Jahr um 1
+	SET @CurrentYear = @CurrentYear + 1
+END
+
+
+
+-- CASE Übung
+
+/*
+	Schreibe eine SQL-Abfrage, die Produkte nach ihrem Lagerbestand kategorisiert. 
+	Verwende das CASE-Statement, um die Produkte in drei Kategorien einzuteilen:
+
+	- Niedriger Bestand: Lagerbestand weniger als 20
+	- Mittlerer Bestand: Lagerbestand zwischen 20 und 50
+	- Hoher Bestand: Lagerbestand mehr als 50
+
+	Die Abfrage soll die ProductID, den ProductName und die Kategorie (StockCategory) ausgeben.
+*/
+SELECT ProductID, ProductName,
+CASE
+	WHEN UnitsInStock < 20 THEN 'Niedriger Bestand'
+	WHEN UnitsInStock BETWEEN 20 AND 50 THEN 'Mittlerer Bestand'
+	ELSE 'Hoher Bestand'
+END AS StockCategory
+FROM Products
+ORDER BY ProductID
