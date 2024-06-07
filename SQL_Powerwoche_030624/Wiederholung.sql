@@ -163,3 +163,27 @@ CASE
 END AS StockCategory
 FROM Products
 ORDER BY ProductID
+
+
+
+
+-- Übung: Partitionierung
+/*
+	- Erstelle 4 Dateigruppen (Übung1, Übung2, Übung3, Übung4)
+	- Erstelle 4 Dateien (jeweils Übung1, Übung2, Übung3, Übung4)
+
+	Erstelle eine Partitionsfunktion Namens (pf_Übung)
+	die von Links die Werte ausließt (0-250, 251-500, 501-750,)
+
+	Erstelle ein Partitionsschema Namens (sch_Übung)
+	als Partition für (pf_Übung) zu (Übung1, Übung2, Übung3, Übung4)
+
+	Lege eine Tabelle auf das Schema und befülle diese
+*/
+
+-- Übung: DB Design
+/*
+		-- Erstelle absichtlich eine ineffiziente Tabelle
+
+		-- Erstelle absichtlich eine effiziente Tabelle
+*/

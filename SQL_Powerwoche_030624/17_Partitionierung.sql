@@ -96,7 +96,7 @@ JOIN
 ON $partition.pf_Zahl(t.id) = x.partition_number
 
 
--- Übung
+-- Übung: Partitionierung
 /*
 	- Erstelle 2 Dateigruppen (Test1, Test2)
 	- Erstelle 2 Dateien (jeweils Test1, Test2)
@@ -108,7 +108,6 @@ ON $partition.pf_Zahl(t.id) = x.partition_number
 	als Partition für (pf_Test) zu (Test1, Test2)
 
 	Lege eine Tabelle auf das Schema und befülle diese
-
-
 */
+
 
